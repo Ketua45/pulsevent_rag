@@ -1,0 +1,23 @@
+name: rag_runtime
+
+services:
+  rag:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: pulsevent-rag-runtime:latest
+    env_file:
+      - ../.env
+    environment:
+      HF_HOME: /cache/huggingface
+      TRANSFORMERS_CACHE: /cache/huggingface
+    volumes:
+      - ../data:/app/data
+      - ../vectorstore_normandie:/app/vectorstore_normandie
+      - huggingface_cache:/cache/huggingface
+    stdin_open: true
+    tty: true
+    command: ["--help"]
+
+volumes:
+  huggingface_cache:

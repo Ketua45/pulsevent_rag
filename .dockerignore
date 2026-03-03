@@ -1,0 +1,10 @@
+.git
+.pytest_cache
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+.ipynb_checkpoints
+.cache
+data
+vectorstore_normandie

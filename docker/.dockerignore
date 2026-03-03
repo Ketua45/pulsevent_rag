@@ -1,0 +1,15 @@
+.git
+.pytest_cache
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+.ipynb_checkpoints
+PulsEvent_POC.ipynb
+PulsEvent_POC copy.ipynb
+tests
+data
+vectorstore_normandie
+events_processed.jsonl
+.cache
+
