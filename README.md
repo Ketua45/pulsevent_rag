@@ -1,7 +1,6 @@
-# RAG Runtime (dossier autonome)
+# RAG Runtime 
 
 Une copie centralisee du RAG est fournie dans ce dossier.
-Une execution autonome est ainsi possible, sans dependance directe au reste du repository.
 
 ## Arborescence
 
