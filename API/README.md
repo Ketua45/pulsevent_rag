@@ -51,7 +51,7 @@ Configuration actuelle:
 
 - image CPU-only (aucune dependance CUDA/NVIDIA n'est installee dans le conteneur)
 - vectorstore charge depuis `../vectorstore_normandie` (bind mount local du dossier runtime)
-- volume Docker nomme `huggingface_cache` utilise pour le cache modeles
+- cache Hugging Face charge depuis `../.cache/huggingface` (bind mount local)
 
 ### Build de l'image
 
@@ -113,7 +113,7 @@ docker compose -f docker/docker-compose.yml run --rm rag check
 
 - `../data -> /app/data` (bind mount)
 - `../vectorstore_normandie -> /app/vectorstore_normandie` (bind mount)
-- `huggingface_cache -> /cache/huggingface` (volume nomme)
+- `../.cache/huggingface -> /cache/huggingface` (bind mount)
 
 La persistance des artefacts est ainsi assuree (donnees preprocess, index FAISS, cache modeles).
 

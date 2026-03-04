@@ -9,15 +9,18 @@ services:
     env_file:
       - ../.env
     environment:
+      USER: rag
+      LOGNAME: rag
+      HOME: /tmp
+      XDG_CACHE_HOME: /tmp/.cache
+      TORCHINDUCTOR_CACHE_DIR: /tmp/torchinductor
       HF_HOME: /cache/huggingface
       TRANSFORMERS_CACHE: /cache/huggingface
+    user: "${UID:-1000}:${GID:-1000}"
     volumes:
       - ../data:/app/data
       - ../vectorstore_normandie:/app/vectorstore_normandie
-      - huggingface_cache:/cache/huggingface
+      - ../.cache/huggingface:/cache/huggingface
     stdin_open: true
     tty: true
     command: ["--help"]
-
-volumes:
-  huggingface_cache:

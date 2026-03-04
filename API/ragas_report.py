@@ -8,6 +8,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from statistics import mean
 
+import os
+
 import pandas as pd
 
 try:

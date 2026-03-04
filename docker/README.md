@@ -10,7 +10,7 @@ Les elements suivants sont requis:
 - variable `MISTRAL_API_KEY` renseignee dans `rag_runtime/.env` (requise pour `ask` et `report`)
 
 Le vectorstore est charge depuis `../vectorstore_normandie` (bind mount local du runtime).
-Le cache Hugging Face est persiste dans le volume Docker `huggingface_cache`.
+Le cache Hugging Face est charge depuis `../.cache/huggingface` (bind mount local du runtime).
 
 ## Commandes rapides
 
@@ -88,8 +88,8 @@ docker compose -f docker/docker-compose.yml down --remove-orphans
 ## Depannage cache Hugging Face
 
 Si un telechargement est interrompu, un lock peut rester present.
-Le cache Hugging Face Docker peut etre reinitialise avec:
+Les locks locaux peuvent etre supprimes avec:
 
 ```bash
-docker volume rm rag_runtime_huggingface_cache
+find .cache/huggingface -name "*.lock" -delete
 ```
