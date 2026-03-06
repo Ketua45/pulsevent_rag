@@ -1,0 +1,6 @@
+question,num_contexts,response_chars,contexts_chars,q_response_overlap,q_context_jaccard,response_context_jaccard
+Propose moi des evenements a Caen,6,1008,1518,0.3333333333333333,0.021897810218978103,0.27461139896373055
+Je cherche des expositions en Normandie,6,851,2219,0.8333333333333334,0.01935483870967742,0.2717948717948718
+Y a-t-il des concerts a Rouen ?,1,634,324,0.8571428571428571,0.02564102564102564,0.13131313131313133
+Quels evenements famille ce week-end en Normandie ?,3,574,577,0.75,0.06329113924050633,0.20300751879699247
+Je veux des activites culturelles gratuites,6,805,1225,0.6666666666666666,0.007352941176470588,0.10050251256281408

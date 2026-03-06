@@ -1,0 +1,14 @@
+metric,description,category,status,mode,n,mean,min,max,std,error
+contexts_chars,Longueur totale des contexts en caracteres.,custom,ok,computed,5,1172.6,324.0,2219.0,677.0319342542123,
+num_contexts,Nombre de contexts recuperes.,custom,ok,computed,5,4.4,1.0,6.0,2.0591260281974,
+q_context_jaccard,Jaccard lexical question/contexts.,custom,ok,computed,5,0.02750755099733162,0.007352941176470588,0.06329113924050633,0.018910808077602308,
+q_response_overlap,Overlap lexical question/reponse.,custom,ok,computed,5,0.7166666666666667,0.3333333333333333,1.0,0.22110831935702666,
+response_chars,Longueur de la reponse en caracteres.,custom,ok,computed,5,810.0,598.0,1085.0,163.99390232566574,
+response_context_jaccard,Jaccard lexical reponse/contexts.,custom,ok,computed,5,0.193392761502138,0.04716981132075472,0.29545454545454547,0.09271961965371109,
+answer_correctness,Exactitude globale de la reponse.,ragas,ok,native,5,0.509823877910983,0.1187492892284773,0.8389568181627145,0.2937560875397782,
+answer_relevancy,La reponse est-elle pertinente pour la question ?,ragas,no_numeric_values,native,0,,,,,no numeric values
+answer_similarity,Similarite entre reponse et reference.,ragas,ok,native,5,0.561141665490086,0.42852918014648633,0.7558272726508586,0.11342409412903516,
+context_precision,Les contextes recuperes sont-ils vraiment utiles ?,ragas,ok,native,5,0.26499999997675,0.0,0.9999999999,0.3884584919527568,
+context_recall,Les contextes recuperes couvrent-ils les infos necessaires ?,ragas,ok,native,5,0.26666666666666666,0.0,0.6666666666666666,0.2494438257849294,
+faithfulness,La reponse est-elle soutenue par le contexte recupere ?,ragas,ok,native,5,0.2823529411764706,0.0,0.5,0.2327806933812868,
+noise_sensitivity,Sensibilite de la reponse au bruit dans le contexte.,ragas,ok,native,5,0.07282051282051283,0.0,0.23076923076923078,0.09435897435897436,
