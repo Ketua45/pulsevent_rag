@@ -57,7 +57,7 @@ def check_required_fields(events):
     print("Check required_fields: OK")
 
 
-def check_date_window(events, max_days_old: int = 375):
+def check_date_window(events, max_days_old: int = 385):
     now = datetime.now(timezone.utc)
     min_date = now - timedelta(days=max_days_old)
 
